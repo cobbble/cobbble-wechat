@@ -112,6 +112,13 @@ Component({
         value: '',
         valueText: ''
       })
+      this.triggerEvent('change', {
+        value: '',
+        item: {}
+      }, {
+        bubbles: true,
+        composed: false
+      })
     },
     handleScrollToBottom: function(e){
       this.triggerEvent('scrollToBottom', e.detail, {
