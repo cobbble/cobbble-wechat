@@ -1,7 +1,7 @@
 @import "../../_common/common.wxss";
 .c-list-picker{
-    position: relative;
-    .c-list-placeholder{
+  position: relative;
+  .c-list-placeholder{
     color: @c_font_light;
   }
   .c-list-value{

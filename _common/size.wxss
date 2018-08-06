@@ -9,6 +9,7 @@
 
 // 间距
 @s_space_section: 30rpx; // 主视觉间距（模块间、左右padding）
+@s_space_normal: 20rpx;  // 普通padding
 @s_space_small: 8rpx;    // 最小间距
 
 // 文本行高

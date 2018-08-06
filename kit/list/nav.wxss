@@ -1,0 +1,31 @@
+@import "../../_common/common.wxss";
+.c-list-nav{
+  width: 750rpx-2*@s_space_section;
+  height: @s_line_list;
+  line-height: @s_line_list;
+  padding: 0 @s_space_section;
+  background: @c_foreground;
+  border-bottom: 1rpx solid @c_border;
+  font-size: @s_font_main;
+  .title{
+    display: inline-block;
+    &.with-icon{
+      margin-left: @s_space_normal;
+    }
+  }
+  .content{
+    float: right;
+    display: inline-block;
+    color: @color_grey;
+    margin-right: @s_space_normal;
+  }
+  .icon-title{
+    margin-top: 15rpx;
+    float: left;
+  }
+  .icon-entry{
+    float: right;
+    height: 26rpx;
+    padding: (@s_line_list - 26rpx)/2 8rpx;
+  }
+}

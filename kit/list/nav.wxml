@@ -1,0 +1,6 @@
+<navigator class="c-list-nav" url="{{url}}">
+  <icon class="icon-title" src="{{icon}}" wx:if="{{icon}}" size="58"></icon>
+  <icon class="icon-entry" type="entry"></icon>
+  <view class="title {{icon ? 'with-icon' : ''}}">{{title}}</view>
+  <view class="content">{{content}}</view>
+</navigator>
