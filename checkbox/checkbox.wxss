@@ -1,0 +1,15 @@
+@import "../_common/common.wxss";
+.c-checkbox{
+  popup{
+    .scroll-wrap{
+      position: absolute;
+      top: @s_line_title + @s_space_section + @s_space_small;
+      bottom: @s_button_full;
+      width: 100%;
+      scroll-view{
+        height: 100%;
+        border-top: 1px solid @color_border;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "button": "../../button/button",
+    "split": "../../kit/split/split",
+    "title": "../../kit/title/title"
+  }
+}

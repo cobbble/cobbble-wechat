@@ -1,0 +1,8 @@
+@import "../_common/common.wxss";
+.calendar-wrap .icon-calendar{
+  float: left;
+  margin-top: 24rpx;
+  margin-right: 15rpx;
+  width:40rpx;
+  height:40rpx;
+}

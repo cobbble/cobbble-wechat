@@ -1,0 +1,6 @@
+@import "../../_common/common.wxss";
+.c-split{
+  height: 1rpx;
+  width: 100%;
+  background: @c_border;
+}

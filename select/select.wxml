@@ -1,0 +1,41 @@
+<list-item-wrap class="c-select" catchtap="showPanel">
+  <list-picker
+    placeholder="{{placeholder}}"
+    value="{{valueText}}"
+    bind:clean="handleCleanAction">
+    <popup
+      show="{{isShow}}"
+      class="{{searchEnable ? 'with-search': 'no-search'}}">
+      <title wx:if="{{!searchEnable}}">{{placeholder}}</title>
+      <view class="search-wrap" wx:if="{{searchEnable}}">
+        <view class="search-input-wrap">
+          <c-icon class="my-icon search" type="search" size="26"></c-icon>
+          <c-icon class="my-icon clear" type="clear" size="30" catchtap="handleSearchClean" wx:if="{{searchText}}"></c-icon>
+          <input
+            placeholder="{{searchPlaceholder}}"
+            placeholder-class="search-placeholder"
+            type="text"
+            value="{{searchText}}"
+            confirm-type="search"
+            bindconfirm="handleSearchSubmit"
+            bindinput="handleSearchInput"/>
+        </view>
+      </view>
+      <view class="scroll-wrap">
+        <scroll-view scroll-y="true" bindscrolltolower="handleScrollToBottom">
+          <option
+            wx:for="{{items}}"
+            wx:for-item="item"
+            wx:for-index="_index"
+            wx:key="key"
+            data-id="{{item.id}}"
+            data-name="{{item.name}}"
+            name="{{item.name}}"
+            selected="{{item.selected}}"
+            bind:submit="handleSelectAction"></option>
+        </scroll-view>
+      </view>
+      <button sizeType="full" bind:SubmitAction="handleCancelAction">取消</button>
+    </popup>
+  </list-picker>
+</list-item-wrap>

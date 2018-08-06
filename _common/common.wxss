@@ -1,0 +1,16 @@
+@import "./color.wxss";
+@import "./size.wxss";
+@import "./form.wxss";
+@import "./z-index.wxss";
+
+.clearfix {
+  min-height: 0;
+  &:after{
+    clear: both;
+  }
+  &:after,&:before{
+    content: "\0020";
+    display: table;
+    border-collapse: collapse;
+  }
+}

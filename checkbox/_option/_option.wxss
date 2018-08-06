@@ -1,0 +1,9 @@
+@import "../../_common/common.wxss";
+.option-wrap{
+  image{
+    float: right;
+    height: 40rpx;
+    width: 40rpx;
+    margin-top: (@s_line_list - 40rpx)/2;
+  }
+}

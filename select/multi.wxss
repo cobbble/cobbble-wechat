@@ -1,0 +1,55 @@
+@import "../_common/common.wxss";
+.c-selector-multi{
+  popup{
+    .scroll-wrap{
+      position: absolute;
+      display: flex;
+      top: @s_line_title + @s_space_section + @s_space_small;
+      bottom: @s_button_full;
+      width: 100%;
+      background: @c_foreground;
+      .scroll-column{
+        position: relative;
+        flex: 1;
+        flex-grow: 1;
+        min-width: 0;
+        border-top: 1px solid @color_border;
+        height: 100%;
+        transition: flex-grow 0.5s;
+        .scroll-view-wrap{
+          border-left: 1px solid @color_border;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          scroll-view{
+            height: 100%;
+          }
+        }
+        &.empty{
+          flex-grow: 0;
+          .scroll-view-wrap{
+            border-left: none;
+          }
+        }
+        &.first{
+          border-left: none;
+          .scroll-view-wrap{
+            border-left: none;
+          }
+        }
+        &.has-title{
+          .title{
+            height: @s_line_list;
+            text-align: center;
+            line-height: @s_line_list;
+            border-bottom: 1px solid @color_border;
+          }
+          .scroll-view-wrap{
+            top: @s_line_list;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<view class="c-form-item input-wrap input-{{placeholderClass}}">
+  <label wx:if="{{label!==''}}">{{label}}</label>
+  <input
+    value="{{value}}"
+    type="{{type}}"
+    password="{{password}}"
+    placeholder="{{placeholder}}"
+    placeholder-class="{{placeholderClass}}-placeholder"
+    disabled="{{disabled}}"
+    maxlength="{{maxlength}}"
+    focus="{{focus}}"
+    confirm-type="{{confirmType}}"
+    bindinput="bindValueChange"/>
+  <image src='/static/image/icon/close.png' class="clean" catchtap="bindClean" wx:if="{{isEmpty==false}}"></image>
+</view>

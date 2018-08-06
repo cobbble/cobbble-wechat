@@ -1,0 +1,3 @@
+<view class="c-tip-wrap tip-{{type}}">
+  <slot></slot>
+</view>

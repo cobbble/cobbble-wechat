@@ -1,0 +1,5 @@
+<list-item-wrap class="option-wrap" catchtap="handleTap">
+  {{name}}
+  <image src='/static/image/icon/checkbox.png' class="uncheck" wx-if="{{checked==false}}"></image>
+  <image src='/static/image/icon/checked.png' class="checked" wx-if="{{checked}}"></image>
+</list-item-wrap>

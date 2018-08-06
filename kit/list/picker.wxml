@@ -1,0 +1,7 @@
+<view class="c-list-picker">
+  <view class="c-list-placeholder" wx:if="{{value == ''}}">{{placeholder}}</view>
+  <view class="c-list-value" wx:if="{{value}}">{{value}}</view>
+  <icon type="clear" size="30" wx:if="{{value}}" class="c-list-clean" catchtap="clean"></icon>
+  <icon type="entry" wx:if="{{!value}}" class="c-list-entry"></icon>
+  <slot></slot>
+</view>

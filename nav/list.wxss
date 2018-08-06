@@ -1,0 +1,26 @@
+@import "../_common/common.wxss";
+.c-nav-list image{
+  height: 58rpx;
+  width: 58rpx;
+  float: left;
+  margin-top: 15rpx;
+}
+.c-nav-list .title-with-icon{
+  margin-left: 20rpx;
+  display: inline-block;
+}
+.c-nav-list .title{
+  display: inline-block;
+}
+.c-nav-list .entry{
+  float: right;
+  width: 15rpx;
+  height: 26rpx;
+  margin-top: 31rpx;
+}
+.c-nav-list .content{
+  float: right;
+  display: inline-block;
+  color: @color_grey;
+  margin-right: 30rpx;
+}

@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "button": "../../button/button",
+    "split": "../../kit/split/split",
+    "list-item-wrap": "../../kit/list/item-wrap",
+    "title": "../../kit/title/title"
+  }
+}

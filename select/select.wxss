@@ -1,0 +1,65 @@
+@import "../_common/common.wxss";
+// 搜索框高度
+@search_height: 110rpx;
+// 搜索框padding
+@search_padding: 20rpx;
+.c-select{
+  popup{
+    .search-wrap{
+      height: @search_height;
+      background: @c_background;
+      z-index: @z-index-popup + 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid @c_border;
+      .search-input-wrap{
+        width: 750rpx - 2*@search_padding;
+        position: relative;
+        input{
+          border: 1px solid @c_border;
+          background: @c_foreground;
+          border-radius: @s_button_medium_radius;
+          padding-left: 50rpx;
+          padding-right: 50rpx;
+          height: @search_height - 2*@search_padding - 2rpx;
+          z-index: @z-index-popup + 1;
+          font-size: @s_font_main;
+        }
+        .search-placeholder{
+          color: @color_placeholder;
+        }
+        .my-icon{
+          position: absolute;
+          z-index: @z-index-popup + 2;
+          &.search{
+            top: (@search_height - 2*@search_padding - 26rpx)/2;
+            left: (50rpx - 13rpx)/2;
+          }
+          &.clear{
+            right: 0;
+            height: 30rpx;
+            padding: (@search_height - 2*@search_padding - 30rpx)/2 16rpx;
+          }
+        }
+      }
+    }
+    &.with-search{
+      .scroll-wrap{
+        top: @search_height;
+      }
+    }
+    &.no-search{
+      .scroll-wrap{
+        top: @s_line_title + @s_space_section + @s_space_small;
+      }
+    }
+    .scroll-wrap{
+      position: absolute;
+      display: flex;
+      bottom: @s_button_full;
+      width: 100%;
+      background: @c_foreground;
+    }
+  }
+}

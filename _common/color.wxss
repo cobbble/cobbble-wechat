@@ -1,0 +1,30 @@
+@color: #3b3c4e;
+@color_grey: #888;
+@color_placeholder: #b2b2b2;
+@color_border: #e5e5e5;
+
+@green: #12b39d;
+@red: #e64340;
+@orange: #fa8224;
+@blue: #222575;
+@blue_light: #4a90e2;
+@bg: #efeff4;
+
+// 字体
+@c_font_main: #3b3c4e;           // 主内容
+@c_font_sub: #888;               // 次要
+@c_font_light: #b2b2b2;          // 缺省
+
+// 背景
+@c_background: #efeff4;          // 背景色
+@c_foreground: #fff;             // 前景背景色
+@c_background_active: #e5e5e5;   // 选中态背景色
+
+// 边框
+@c_border: #e5e5e5;
+
+// 常用色
+@c_green: #12b39d;
+@c_red: #e64340;
+@c_orange: #fa8224;
+@c_blue: #222575;

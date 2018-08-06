@@ -1,0 +1,15 @@
+@import "../../_common/common.wxss";
+.c-tip-wrap{
+  color: #fff;
+  font-size: 28rpx;
+  font-weight: normal;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+}
+.tip-notice{
+  background: @green;
+}
+.tip-warning{
+  background: @red;
+}

@@ -1,0 +1,13 @@
+{
+  "component": true,
+  "usingComponents": {
+    "button": "../button/button",
+    "title": "../kit/title/title",
+    "split-v": "../kit/split/split-v",
+    "list-section": "../kit/list/section",
+    "list-item-wrap": "../kit/list/item-wrap",
+    "list-picker": "../kit/list/picker",
+    "option": "./_option/_option",
+    "popup": "../kit/popup/full"
+  }
+}

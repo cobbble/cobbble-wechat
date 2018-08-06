@@ -1,0 +1,3 @@
+<view class="c-list-item-wrap">
+  <slot></slot>
+</view>

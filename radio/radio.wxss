@@ -1,0 +1,18 @@
+@import "../_common/common.wxss";
+.radio-wrap{
+  background: #fff;
+  .radio-item{
+    height: 90rpx;
+    line-height: 90rpx;
+    padding: 0 30rpx;
+    .label{
+      display: inline-block;
+    }
+    image{
+      float: right;
+      height: 40rpx;
+      width: 40rpx;
+      margin-top: 25rpx;
+    }
+  }
+}

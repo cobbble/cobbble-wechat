@@ -1,0 +1,29 @@
+@import "./color.wxss";
+.c-form-item{
+  position: relative;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #fff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  font-size: 34rpx;
+}
+
+.c-form-item .placeholder, .c-form-item .picker{
+  float: left;
+  width: 600rpx;
+}
+.c-form-item .placeholder{
+  color: @color_placeholder;
+}
+.c-form-item .picker{
+  color: @color;
+}
+.c-form-item .clean{
+  width:26rpx;
+  height:26rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  padding: 31rpx 8rpx;
+}

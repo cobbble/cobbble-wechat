@@ -1,0 +1,24 @@
+@import "../_common/common.wxss";
+.c-button-full, .c-button-normal{
+  background: @c_blue;
+  color: #fff;
+  font-size: @s_font_button;
+}
+.c-button-normal{
+  height: @s_button;
+  line-height: @s_button;
+  width: 750rpx - @s_space_section * 2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80rpx;
+  margin-bottom: 80rpx;
+}
+.c-button-full{
+  height: @s_button_full;
+  line-height: @s_button_full;
+  width: 100%;
+  border-radius: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

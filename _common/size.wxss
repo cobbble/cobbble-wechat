@@ -1,0 +1,28 @@
+// 以下尺寸大多来自《微信小程序设计指南》，不建议自定义
+// 字体大小
+@s_font_large: 80rpx;  // 阿拉伯数字（大）
+@s_font_button: 36rpx; // 按钮
+@s_font_main: 34rpx;   // 正文
+@s_font_sub: 28rpx;    // 次要
+@s_font_small: 26rpx;  // 弱化
+@s_font_ignore: 22rpx; // 不需要关注（版权等）
+
+// 间距
+@s_space_section: 30rpx; // 主视觉间距（模块间、左右padding）
+@s_space_small: 8rpx;    // 最小间距
+
+// 文本行高
+@s_line_title: 40rpx;  // 标题
+@s_line_list: 88rpx;   // 列表
+
+// 按钮
+@s_button: 94rpx;              // 大按钮
+@s_button_radius: 10rpx;       // 圆角
+
+@s_button_full: 98rpx;         // 全屏按钮（无圆角）
+
+@s_button_medium: 70rpx;       // 中按钮
+@s_button_medium_radius: 8rpx; // 圆角
+
+@s_button_small: 60rpx;        // 小按钮
+@s_button_small_radius: 6rpx;  // 小按钮圆角

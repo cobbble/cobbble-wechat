@@ -1,0 +1,8 @@
+@import "../../_common/common.wxss";
+.c-form-title{
+  margin: @s_space_section @s_space_section @s_space_small;
+  font-size: @s_font_sub;
+  color: @c_font_sub;
+  height: @s_line_title;
+  line-height: @s_line_title;
+}

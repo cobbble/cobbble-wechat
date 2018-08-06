@@ -1,0 +1,19 @@
+@import "../../_common/common.wxss";
+.select-option{
+  color: @c_font_main;
+  height: @s_line_list;
+  line-height: @s_line_list;
+  font-size: @s_font_sub;
+  border-bottom: 1px solid @color_border;
+  padding: 0 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  &.multi{
+    border-bottom: none;
+    text-align: center;
+  }
+  &.selected{
+    background: @c_background_active;
+  }
+}

@@ -1,0 +1,9 @@
+<navigator class="c-form-item c-nav-list" url="{{url}}">
+  <image src="{{icon}}" class="icon" wx:if="{{icon}}"></image>
+  <view class="title-with-icon" wx:if="{{icon}}">{{title}}</view>
+
+  <view class="title" wx:if="{{icon==''}}">{{title}}</view>
+
+  <image src="/static/image/icon/list-entry.png" class="entry"></image>
+  <view class="content">{{content}}</view>
+</navigator>

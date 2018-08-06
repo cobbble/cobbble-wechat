@@ -1,0 +1,7 @@
+@import "../../_common/common.wxss";
+.c-list-section{
+  margin-bottom: @s_space_section;
+  .c-list-wrap{
+    border-top: 1rpx solid @c_border;
+  }
+}

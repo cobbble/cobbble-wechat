@@ -1,0 +1,13 @@
+@import "../../_common/common.wxss";
+.c-list-item-wrap{
+  width: 750rpx-2*@s_space_section;
+  height: @s_line_list;
+  line-height: @s_line_list;
+  padding: 0 @s_space_section;
+  background: @c_foreground;
+  border-bottom: 1rpx solid @c_border;
+  font-size: @s_font_main;
+  .placeholder{
+    color: @c_font_light;
+  }
+}

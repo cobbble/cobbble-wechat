@@ -1,0 +1,23 @@
+@import "../_common/common.wxss";
+.input-wrap input{
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.input-wrap label{
+  position: absolute;
+  top: 0;
+  left: 30rpx;
+}
+.input-wrap .normal-placeholder, .input-wrap .with-label-placeholder{
+  color: @color_placeholder;
+}
+.input-normal input{
+  width: 600rpx;
+}
+.input-with-label input{
+  text-align: right;
+  padding-left: 240rpx;
+}
+.input-with-label .clean{
+  display: none;
+}

@@ -1,0 +1,3 @@
+<view class="select-option {{selected ? 'selected' : ''}} {{multi ? 'multi' : ''}}" catchtap="handleTap">
+  {{name}}
+</view>

@@ -1,0 +1,9 @@
+<view class="c-form-item upload-wrap" catchtap='bindPreBack'>
+  <label>{{label}}</label>
+  <view class="upload-func" wx:if="{{isEmpty}}" bindtap="bindUpload">
+    <view class="placeholder">{{placeholder}}</view>
+    <image src='/static/image/icon/list-entry.png' class="entry"></image>
+  </view>
+  <image src='{{filePath}}' class="thumbnail" wx:if="{{isEmpty==false}}"></image>
+  <image src='/static/image/icon/close.png' class="clean" bindtap="bindClean" wx:if="{{isEmpty==false}}"></image>
+</view>

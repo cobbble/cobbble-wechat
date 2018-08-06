@@ -1,0 +1,27 @@
+@import "../_common/common.wxss";
+.upload-wrap upload{
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.upload-wrap .upload-func{
+  height: 88rpx;
+  float: right;
+  padding-left: 150rpx;
+}
+.upload-wrap .placeholder{
+  color: @color_placeholder;
+  width: auto;
+}
+.upload-wrap .entry{
+  width:26rpx;
+  height:26rpx;
+  padding: 31rpx 8rpx;
+}
+.upload-wrap .thumbnail{
+  height: 68rpx;
+  width: 100rpx;
+  display: block;
+  float: right;
+  margin-right: 60rpx;
+  margin-top: 10rpx;
+}
