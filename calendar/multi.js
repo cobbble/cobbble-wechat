@@ -3,36 +3,28 @@ Component({
     // 可选日期区间
     start: {
       type: String,
-      value: '2018-01-01',
+      value: '2018-01-01'
     },
     end: {
       type: String,
-      value: '2022-12-31',
+      value: '2022-12-31'
     },
     // 开始日期选择器placeholder
     titleStart: {
       type: String,
-      value: '开始日期',
+      value: '开始日期'
     },
     // 结束日期选择器placeholder
     titleEnd: {
       type: String,
-      value: '结束日期',
+      value: '结束日期'
     },
     // 选中的日期
     valueStart: {
-      type: String,
-      value: '',
-      observer: function(newVal, oldVal, changedPath){
-        this.triggerEvent('changeStart', newVal, { bubbles: true , composed: false})
-      }
+      type: String
     },
     valueEnd: {
-      type: String,
-      value: '',
-      observer: function(newVal, oldVal, changedPath){
-        this.triggerEvent('changeEnd', newVal, { bubbles: true , composed: false})
-      }
+      type: String
     },
   },
   data: {
@@ -48,6 +40,7 @@ Component({
         valueStart: dateStart,
         endFrom: dateStart || this.data.start// 设置结束时间开始区间
       })
+      this.triggerEvent('changeStart', e.detail, { bubbles: true , composed: false})
     },
     bindEndChange: function(e){
       var dateEnd = e.detail.value || ''
@@ -55,6 +48,7 @@ Component({
         valueEnd: dateEnd,
         startTo: dateEnd || this.data.end // 设置开始时间结束区间
       })
+      this.triggerEvent('changeEnd', e.detail, { bubbles: true , composed: false})
     }
   },
   ready: function(){

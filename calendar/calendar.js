@@ -19,18 +19,12 @@ Component({
   },
   methods: {
     handleChangeAction: function(e){
-      console.log(e)
-      this.setData({
-        value: e.detail.value
-      })
+      this.setData({value: e.detail.value})
       this.triggerEvent('change', e.detail, { bubbles: true , composed: false})
     },
     handleCleanAction: function(e){
-      console.log(e)
-      this.setData({
-        value: ""
-      })
-      this.triggerEvent('change', e.detail, { bubbles: true , composed: false})
+      this.setData({value: ""})
+      this.triggerEvent('change', {value: ""}, { bubbles: true , composed: false})
     }
   }
 })

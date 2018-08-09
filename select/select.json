@@ -1,9 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "list-section": "../kit/list/section",
     "list-picker": "../kit/list/picker",
-
     "popup": "../kit/popup/full",
     "c-icon": "../kit/icon/icon",
     "title": "../kit/title/title",

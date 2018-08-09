@@ -1,3 +1,7 @@
 {
-  "component": true
+  "component": true,
+  "usingComponents": {
+    "icon": "../icon/icon",
+    "list-item-wrap": "./item-wrap"
+  }
 }

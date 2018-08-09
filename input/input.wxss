@@ -1,23 +1,37 @@
 @import "../_common/common.wxss";
-.input-wrap input{
-  height: 88rpx;
-  line-height: 88rpx;
-}
-.input-wrap label{
-  position: absolute;
-  top: 0;
-  left: 30rpx;
-}
-.input-wrap .normal-placeholder, .input-wrap .with-label-placeholder{
-  color: @color_placeholder;
-}
-.input-normal input{
-  width: 600rpx;
-}
-.input-with-label input{
-  text-align: right;
-  padding-left: 240rpx;
-}
-.input-with-label .clean{
-  display: none;
+.c-input{
+  font-size: @s_font_main;
+  .title{
+    display: inline-block;
+    color: @c_font_main;
+  }
+  c-icon{
+    position: absolute;
+    top: 0;
+    right: @s_space_normal;
+    height: 30rpx;
+    padding: (@s_line_list - 30rpx)/2 8rpx;
+  }
+  input{
+    height: @s_line_list;
+    line-height: @s_line_list;
+    margin-right: @s_space_normal + @s_space_section;
+  }
+  .c-placeholder{
+    color: @color_placeholder;
+  }
+  &.with-title{
+    .title{
+      float: left;
+    }
+    input{
+      float: right;
+      text-align: right;
+      margin-right: 0;
+      width: @s_list_content;
+    }
+    c-icon{
+      display: none;
+    }
+  }
 }

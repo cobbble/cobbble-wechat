@@ -1,4 +1,5 @@
-<view class="c-list-item {{title ? 'with-title' : 'no-title'}}">
-  <view class="item-title" wx:if="{{title}}">{{title}}</view>
-  <view class="item-content {{color}}"><slot></slot></view>
-</view>
+<list-item-wrap
+  class="c-list-item {{title ? 'with-title' : 'no-title'}}">
+  <view class="title" wx:if="{{title}}">{{title}}</view>
+  <view class="content {{color}}"><slot></slot></view>
+</list-item-wrap>

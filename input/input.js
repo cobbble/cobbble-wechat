@@ -1,21 +1,14 @@
-var Api = require('../../common/util/api.js')
-var util = require('../../common/util/util.js')
 Component({
   properties: {
+    title: {
+      type: String
+    },
     value: {
-      type: String,
-      value: '',
-      observer: function(newVal, oldVal, changedPath){
-        this.triggerEvent('ValueChange', newVal, { bubbles: true , composed: false})
-      }
+      type: String
     },
     type: {
       type: String,
       value: 'text',
-    },
-    label: {
-      type: String,
-      value: '',
     },
     passport: {
       type: Boolean,
@@ -24,10 +17,6 @@ Component({
     placeholder: {
       type: String,
       value: '请输入内容',
-    },
-    placeholderClass: {
-      type: String,
-      value: 'normal',
     },
     disabled: {
       type: Boolean,
@@ -46,32 +35,14 @@ Component({
       value: "done",
     }
   },
-  data: {
-    isEmpty: true,
-    rangeArray: [],
-    rangeID: [],
-    rangeKey: '',
-    selectValue: ''
-  },
   methods: {
-    bindValueChange: function(e){
-      var val = e.detail.value,
-          isEmpty = false
-      if(val == '')
-        isEmpty = true
-
-      this.setData({
-        value: val,
-        isEmpty: isEmpty
-      })
+    change: function(e){
+      this.setData({value: e.detail.value})
+      this.triggerEvent('change', e.detail, { bubbles: true , composed: false})
     },
-    bindClean: function(e){
-      this.setData({
-        value: '',
-        isEmpty: true
-      })
+    clean: function(e){
+      this.setData({value: ''})
+      this.triggerEvent('change', {value: ''}, { bubbles: true , composed: false})
     }
-  },
-  ready: function(){
   }
 })

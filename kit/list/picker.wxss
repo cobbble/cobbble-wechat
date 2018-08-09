@@ -33,7 +33,7 @@
       margin-right: @s_space_normal + @s_space_section;
     }
     .content{
-      max-width: 425rpx;
+      max-width: @s_list_content_with_icon;
     }
   }
 }

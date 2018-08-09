@@ -1,15 +1,21 @@
-<view class="c-form-item input-wrap input-{{placeholderClass}}">
-  <label wx:if="{{label!==''}}">{{label}}</label>
+<list-item-wrap
+  class="c-input {{title ? 'with-title' : 'no-title'}}">
+  <view class="title" wx:if="{{title}}">{{title}}</view>
   <input
     value="{{value}}"
     type="{{type}}"
     password="{{password}}"
     placeholder="{{placeholder}}"
-    placeholder-class="{{placeholderClass}}-placeholder"
+    placeholder-class="c-placeholder"
     disabled="{{disabled}}"
     maxlength="{{maxlength}}"
     focus="{{focus}}"
     confirm-type="{{confirmType}}"
-    bindinput="bindValueChange"/>
-  <image src='/static/image/icon/close.png' class="clean" catchtap="bindClean" wx:if="{{isEmpty==false}}"></image>
-</view>
+    bindinput="change"/>
+  <c-icon
+    type="clear"
+    size="30"
+    class="icon-clean"
+    catchtap="clean"
+    wx:if="{{value}}"></c-icon>
+</list-item-wrap>
