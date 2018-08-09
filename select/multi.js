@@ -85,7 +85,7 @@ Component({
       this.setData({
         columnItems: columnItems,
         selectedItems: selectedItems,
-        // valueText: valueText
+        valueText: valueText
       })
     },
     showPanel: function(e) {
