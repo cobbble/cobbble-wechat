@@ -1,14 +1,13 @@
 {
   "component": true,
   "usingComponents": {
-    "button": "../button/button",
-    "title": "../kit/title/title",
-    "split-v": "../kit/split/split-v",
-    "c-icon": "../kit/icon/icon",
     "list-section": "../kit/list/section",
-    "list-item-wrap": "../kit/list/item-wrap",
     "list-picker": "../kit/list/picker",
+
+    "popup": "../kit/popup/full",
+    "c-icon": "../kit/icon/icon",
+    "title": "../kit/title/title",
     "option": "./_option/_option",
-    "popup": "../kit/popup/full"
+    "button": "../button/button"
   }
 }

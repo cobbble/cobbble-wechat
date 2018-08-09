@@ -1,5 +1,6 @@
 @import "../../_common/common.wxss";
 .c-list-item-wrap{
+  position: relative;
   width: 750rpx-2*@s_space_section;
   height: @s_line_list;
   line-height: @s_line_list;

@@ -1,7 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "calendar": "./calendar",
-    "split": "../kit/split/split"
+    "calendar": "./calendar"
   }
 }

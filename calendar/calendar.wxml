@@ -1,8 +1,17 @@
-<view class="c-form-item calendar-wrap">
-  <picker mode="date" value="{{value}}" start="{{start}}" end="{{end}}" bindchange="bindDateChange">
-    <image src='/static/image/icon/calendar-{{icon}}.png' class="icon-calendar"></image>
-    <view class="placeholder"  wx:if="{{isEmpty}}">{{placeholder}}</view>
-    <view class="picker" wx:if="{{isEmpty==false}}">{{value}}</view>
-    <image src='/static/image/icon/close.png' class="clean" catchtap="bindClean" wx:if="{{isEmpty==false}}"></image>
+<list-item-wrap class="calendar-wrap {{title ? 'with-title': 'no-title'}}">
+  <picker mode="date" value="{{value}}" start="{{start}}" end="{{end}}" bindchange="handleChangeAction">
+    <view class="title" wx:if="{{title}}">{{title}}</view>
+    <view class="placeholder" wx:if="{{value == ''}}">{{placeholder}}</view>
+    <view class="content" wx:if="{{value}}">{{value}}</view>
+    <c-icon
+      type="clear"
+      size="30"
+      class="icon-clean"
+      catchtap="handleCleanAction"
+      wx:if="{{value}}"></c-icon>
+    <c-icon
+      type="entry"
+      class="icon-entry"
+      wx:if="{{!value}}"></c-icon>
   </picker>
-</view>
+</list-item-wrap>

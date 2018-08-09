@@ -10,6 +10,9 @@ import {ArrayEqual} from '../_common/util'
 
 Component({
   properties: {
+    title: {
+      type: String
+    },
     placeholder: {
       type: String,
       value: '请选择'
@@ -82,7 +85,7 @@ Component({
       this.setData({
         columnItems: columnItems,
         selectedItems: selectedItems,
-        valueText: valueText
+        // valueText: valueText
       })
     },
     showPanel: function(e) {
@@ -101,6 +104,7 @@ Component({
       this.setData({isShow: false, valueText: valueText})
       this.triggerEvent('submit', {
         value: this.data.value,
+        valueText: valueText,
         items: this.data.selectedItems
       }, {
         bubbles: true,
@@ -108,6 +112,7 @@ Component({
       })
     },
     handleSelectAction: function(e) {
+      // debugger
       var level = e.detail.dataset.level,
         index = e.detail.dataset.index,
         columnItems = this.data.columnItems,
@@ -121,6 +126,7 @@ Component({
           return
         selected[level] = item.id
         selectedItems[level] = item
+        // 清空下级选中数据
         for (var l = level + 1; l <= selected.length; l++) {
           if (selected[l])
             selected[l] = ''
@@ -130,13 +136,13 @@ Component({
         this.setData({value: selected, selectedItems: selectedItems})
         var columnsChanged = false
         for (var i = level + 2; i <= columns.length; i++) {
-          if (columns[i] && columns[i].length > 0) {
-            columns[i] = []
+          if (columnItems[i] && columnItems[i].length > 0) {
+            columnItems[i] = []
             columnsChanged = true
           }
         }
         if (columnsChanged) {
-          this.setData({columns: columns})
+          this.setData({columnItems: columnItems})
         }
         this._render()
         if (level == columns.length - 1)

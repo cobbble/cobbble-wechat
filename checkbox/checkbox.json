@@ -1,12 +1,12 @@
 {
   "component": true,
   "usingComponents": {
-    "button": "../button/button",
-    "title": "../kit/title/title",
     "list-section": "../kit/list/section",
     "list-picker": "../kit/list/picker",
-    "list-item-wrap": "../kit/list/item-wrap",
+
     "popup": "../kit/popup/full",
-    "option": "./_option/_option"
+    "title": "../kit/title/title",
+    "option": "./_option/_option",
+    "button": "../button/button"
   }
 }

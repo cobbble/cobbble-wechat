@@ -1,41 +1,42 @@
-<list-item-wrap class="c-selector-multi" catchtap="showPanel">
-  <list-picker
-    placeholder="{{placeholder}}"
-    value="{{valueText}}"
-    bind:clean="handleCleanAction">
-    <popup show="{{isShow}}">
-      <title>{{placeholder}}</title>
-      <view class="scroll-wrap">
-        <view
-          wx:for="{{columnItems}}"
-          wx:for-index="index"
-          wx:for-item="items"
-          wx:key="key"
-          class="scroll-column {{index == 0 ? 'first':''}} {{items.length == 0 ? 'empty':''}} {{columnsName[index] ? 'has-title' : ''}}">
-          <view class="title" wx:if="{{columnsName[index]}}">
-            {{columnsName[index]}}
-          </view>
-          <view class="scroll-view-wrap">
-            <scroll-view scroll-y="true">
-              <option
-                wx:for="{{items}}"
-                wx:for-item="item"
-                wx:for-index="_index"
-                wx:key="key"
-                data-id="{{item.id}}"
-                data-pid="{{item.pid}}"
-                data-name="{{item.name}}"
-                data-level="{{index}}"
-                data-index="{{_index}}"
-                name="{{item.name}}"
-                selected="{{item.selected}}"
-                multi="true"
-                bind:submit="handleSelectAction"></option>
-            </scroll-view>
-          </view>
+<list-picker
+  class="c-selector-multi"
+  title="{{title}}"
+  placeholder="{{placeholder}}"
+  value="{{valueText}}"
+  catchtap="showPanel"
+  bind:clean="handleCleanAction">
+  <popup show="{{isShow}}">
+    <title>{{placeholder}}</title>
+    <view class="scroll-wrap">
+      <view
+        wx:for="{{columnItems}}"
+        wx:for-index="index"
+        wx:for-item="items"
+        wx:key="key"
+        class="scroll-column {{index == 0 ? 'first':''}} {{items.length == 0 ? 'empty':''}} {{columnsName[index] ? 'has-title' : ''}}">
+        <view class="title" wx:if="{{columnsName[index]}}">
+          {{columnsName[index]}}
+        </view>
+        <view class="scroll-view-wrap">
+          <scroll-view scroll-y="true">
+            <option
+              wx:for="{{items}}"
+              wx:for-item="item"
+              wx:for-index="_index"
+              wx:key="key"
+              data-id="{{item.id}}"
+              data-pid="{{item.pid}}"
+              data-name="{{item.name}}"
+              data-level="{{index}}"
+              data-index="{{_index}}"
+              name="{{item.name}}"
+              selected="{{item.selected}}"
+              multi="true"
+              bind:submit="handleSelectAction"></option>
+          </scroll-view>
         </view>
       </view>
-      <button sizeType="full" bind:SubmitAction="handleCancelAction">取消</button>
-    </popup>
-  </list-picker>
-</list-item-wrap>
+    </view>
+    <button sizeType="full" bind:SubmitAction="handleCancelAction">取消</button>
+  </popup>
+</list-picker>

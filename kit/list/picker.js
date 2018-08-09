@@ -4,13 +4,13 @@ Component({
       type: String,
       value: '',
     },
-    value: {
+    title: {
       type: String,
       value: '',
     },
-    empty: {
-      type: Boolean,
-      value: true,
+    value: {
+      type: String,
+      value: '',
     },
   },
   methods: {

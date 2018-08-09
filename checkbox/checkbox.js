@@ -2,6 +2,9 @@ import {ArrayEqual} from '../_common/util'
 
 Component({
   properties: {
+    title: {
+      type: String
+    },
     placeholder: {
       type: String,
       value: '请选择'
@@ -11,7 +14,6 @@ Component({
       observer: function(newVal, oldVal, changedPath) {
         if(newVal.length == 0 && oldVal.length == 0)
           return
-        console.log(2222, newVal, oldVal)
         this._render()
       }
     },
@@ -21,7 +23,6 @@ Component({
       observer: function(newVal, oldVal, changedPath) {
         if (ArrayEqual(newVal, oldVal))
           return
-        console.log(1111, newVal, oldVal)
         this._render()
       }
     }
@@ -35,7 +36,6 @@ Component({
   },
   methods: {
     _render: function() {
-      console.log('checkbox rendering...')
       var checkedList = this.data.value,
         items = this.data.items,
         checkedItems = [],

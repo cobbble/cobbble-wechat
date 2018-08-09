@@ -1,3 +1,15 @@
-<calendar placeholder="请选择{{titleStart}}" icon="start" bindValueChange="bindStartChange" start="{{startFrom}}" end="{{startTo}}" value="{{valueStart}}"></calendar>
-<split></split>
-<calendar placeholder="请选择{{titleEnd}}" icon="end" bindValueChange="bindEndChange" start="{{endFrom}}" end="{{endTo}}" value="{{valueEnd}}"></calendar>
+<calendar
+  title="{{titleStart}}"
+  placeholder="请选择{{titleStart}}"
+  value="{{valueStart}}"
+  start="{{startFrom}}"
+  end="{{startTo}}"
+  bind:change="bindStartChange"></calendar>
+
+<calendar
+  title="{{titleEnd}}"
+  placeholder="请选择{{titleEnd}}"
+  value="{{valueEnd}}"
+  start="{{endFrom}}"
+  end="{{endTo}}"
+  bind:change="bindEndChange"></calendar>

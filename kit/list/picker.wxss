@@ -1,29 +1,39 @@
 @import "../../_common/common.wxss";
 .c-list-picker{
-  position: relative;
-  .c-list-placeholder{
+  .placeholder{
     color: @c_font_light;
   }
-  .c-list-value{
+  .content{
     color: @c_font_main;
-    width: 600rpx;
+    max-width: 600rpx;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .c-list-clean, .c-list-entry{
+  c-icon{
     position: absolute;
     top: 0;
-    right: 0;
+    &.icon-clean{
+      right: @s_space_normal;
+      height: 30rpx;
+      padding: (@s_line_list - 30rpx)/2 8rpx;
+    }
+    &.icon-entry{
+      right: 26rpx;
+      height: 26rpx;
+      padding: (@s_line_list - 26rpx)/2 8rpx;
+    }
   }
-  .c-list-clean{
-    right: -8rpx;
-    height: 30rpx;
-    padding: (@s_line_list - 30rpx)/2 8rpx;
-  }
-  .c-list-entry{
-    right: -8rpx;
-    height: 26rpx;
-    padding: (@s_line_list - 26rpx)/2 8rpx;
+  &.with-title{
+    .title{
+      float: left;
+    }
+    .placeholder, .content{
+      float: right;
+      margin-right: @s_space_normal + @s_space_section;
+    }
+    .content{
+      max-width: 425rpx;
+    }
   }
 }

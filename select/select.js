@@ -10,9 +10,12 @@ import {ArrayEqual} from '../_common/util'
 
 Component({
   properties: {
+    title: {
+      type: String
+    },
     placeholder: {
       type: String,
-      value: '请选择'
+      value: '请选择选项'
     },
     items: {
       type: Array,

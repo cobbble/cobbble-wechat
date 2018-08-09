@@ -1,27 +1,28 @@
-<list-item-wrap class="c-checkbox" catchtap="showPanel">
-  <list-picker
-    placeholder="{{placeholder}}"
-    value="{{valueText}}"
-    bind:clean="handleCleanAction">
-    <popup show="{{isShow}}">
-      <title>{{placeholder}}</title>
-      <view class="scroll-wrap">
-        <scroll-view scroll-y="true">
-          <option
-            wx:for="{{items}}"
-            wx:for-item="item"
-            wx:for-index="index"
-            wx:key="unique"
-            data-id="{{item.id}}"
-            data-name="{{item.name}}"
-            data-index="{{index}}"
-            name="{{item.name}}"
-            checked="{{item.checked}}"
-            bind:change="handleCheckChange">
-          </option>
-        </scroll-view>
-      </view>
-      <button sizeType="full" bind:SubmitAction="handleSubmitAction">确认{{choosenText}}</button>
-    </popup>
-  </list-picker>
-</list-item-wrap>
+<list-picker
+  class="c-checkbox"
+  title="{{title}}"
+  placeholder="{{placeholder}}"
+  value="{{valueText}}"
+  catchtap="showPanel"
+  bind:clean="handleCleanAction">
+  <popup show="{{isShow}}">
+    <title>{{placeholder}}</title>
+    <view class="scroll-wrap">
+      <scroll-view scroll-y="true">
+        <option
+          wx:for="{{items}}"
+          wx:for-item="item"
+          wx:for-index="index"
+          wx:key="unique"
+          data-id="{{item.id}}"
+          data-name="{{item.name}}"
+          data-index="{{index}}"
+          name="{{item.name}}"
+          checked="{{item.checked}}"
+          bind:change="handleCheckChange">
+        </option>
+      </scroll-view>
+    </view>
+    <button sizeType="full" bind:SubmitAction="handleSubmitAction">确认{{choosenText}}</button>
+  </popup>
+</list-picker>
