@@ -1,3 +1,10 @@
 {
-  "component": true
+  "component": true,
+  "usingComponents": {
+    "list-picker": "../kit/list/picker",
+    "popup": "../kit/popup/full",
+    "c-icon": "../kit/icon/icon",
+    "title": "../kit/title/title",
+    "button": "../button/button"
+  }
 }
