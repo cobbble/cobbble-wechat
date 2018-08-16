@@ -1,15 +1,3 @@
-@color: #3b3c4e;
-@color_grey: #888;
-@color_placeholder: #b2b2b2;
-@color_border: #e5e5e5;
-
-@green: #12b39d;
-@red: #e64340;
-@orange: #fa8224;
-@blue: #222575;
-@blue_light: #4a90e2;
-@bg: #efeff4;
-
 // 字体
 @c_font_main: #3b3c4e;           // 主内容
 @c_font_sub: #888;               // 次要
@@ -26,5 +14,6 @@
 // 常用色
 @c_green: #12b39d;
 @c_red: #e64340;
+@c_yellow: #f2be55;
 @c_orange: #fa8224;
 @c_blue: #222575;

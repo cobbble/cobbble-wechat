@@ -1,7 +1,5 @@
-@import "./color.wxss";
+@import "./theme/blue-light.wxss";
 @import "./size.wxss";
-@import "./form.wxss";
-@import "./z-index.wxss";
 
 .clearfix {
   min-height: 0;

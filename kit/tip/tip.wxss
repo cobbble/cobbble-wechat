@@ -8,8 +8,8 @@
   text-align: center;
 }
 .tip-notice{
-  background: @green;
+  background: @c_green;
 }
 .tip-warning{
-  background: @red;
+  background: @c_red;
 }

@@ -1,5 +1,5 @@
 <view class="c-list-section">
-  <title wx:if="{{title}}">{{title}}</title>
+  <title wx:if="{{title}}" tips="{{tips}}">{{title}}</title>
   <view class="c-list-wrap">
     <slot></slot>
   </view>

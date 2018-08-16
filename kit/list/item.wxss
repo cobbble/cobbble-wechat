@@ -8,7 +8,7 @@
   .content{
     color: @c_font_main;
     &.grey{
-      color: @color_placeholder;
+      color: @c_font_light;
     }
   }
   &.with-title{

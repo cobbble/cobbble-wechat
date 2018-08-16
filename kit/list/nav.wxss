@@ -16,7 +16,7 @@
   .content{
     float: right;
     display: inline-block;
-    color: @color_grey;
+    color: @c_font_sub;
     margin-right: @s_space_normal;
   }
   .icon-title{

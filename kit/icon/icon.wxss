@@ -1,4 +1,22 @@
 @import "../../_common/common.wxss";
 .c-icon-wrap{
   position: relative;
+  .text-icon{
+    width: 40rpx;
+    height: 40rpx;
+    font-size: @s_font_small;
+    color: @c_font_sub;
+    background: @c_foreground;
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border: 1px solid @c_font_sub;
+    border-radius: 50%;
+    &.invert{
+      color: @c_foreground;
+    }
+  }
 }

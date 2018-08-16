@@ -1,0 +1,18 @@
+<view class="c-steps">
+  <view
+    class="c-step {{status[index]}}"
+    catchtap="handleTap"
+    data-index="{{index}}"
+    data-name="{{step}}"
+    wx:for="{{steps}}"
+    wx:for-index="index"
+    wx:for-item="step"
+    wx:key="key">
+    <view class="split split-left"></view>
+    <view class="title-wrap">
+      <view class="dot"></view>
+      <view class="title">{{step}}</view>
+    </view>
+    <view class="split split-right"></view>
+  </view>
+</view>

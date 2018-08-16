@@ -1,6 +1,9 @@
-<view
-  class="c-icon-wrap"
+<view class="c-icon-wrap"
   style="width:{{width||size}}rpx;height:{{height||size}}rpx;line-height:{{height||size}}rpx;">
   <icon type="{{type}}" size="{{width/2||height/2||size/2}}" color="{{color}}" wx:if="{{isSystem}}"></icon>
   <image src="{{src}}" style="width:{{width||size}}rpx; height:{{height||size}}rpx" wx:if="{{!isSystem && src}}"/>
+  <view class="text-icon"
+    style="width:{{size}}rpx;height:{{size}}rpx;border-color:{{color}};color:{{color}};" wx:if="{{!isSystem && type == 'text' && text}}">{{text}}</view>
+  <view class="text-icon invert"
+    style="width:{{size}}rpx;height:{{size}}rpx;border-color:{{color}};background:{{color}};" wx:if="{{!isSystem && type == 'text_invert' && text}}">{{text}}</view>
 </view>

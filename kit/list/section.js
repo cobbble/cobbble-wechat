@@ -1,16 +1,16 @@
 Component({
   properties: {
     title: {
-      type: String,
-      value: '',
+      type: String
+    },
+    tips: {
+      type: String
     },
     content: {
-      type: String,
-      value: '',
+      type: String
     },
     contentStyle: {
-      type: String,
-      value: '',
+      type: String
     },
   }
 })

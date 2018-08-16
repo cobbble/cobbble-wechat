@@ -1,1 +1,7 @@
-Component({})
+Component({
+  properties: {
+    tips: {
+      type: String
+    }
+  }
+})

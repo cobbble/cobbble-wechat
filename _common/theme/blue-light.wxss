@@ -1,0 +1,19 @@
+// 字体
+@c_font_main: #444;              // 主内容
+@c_font_sub: #888;               // 次要
+@c_font_light: #b2b2b2;          // 缺省
+
+// 背景
+@c_background: #f3f3f3;          // 背景色
+@c_foreground: #fff;             // 前景背景色
+@c_background_active: #e5e5e5;   // 选中态背景色
+
+// 边框
+@c_border: #e5e5e5;
+
+// 常用色
+@c_blue: #0075fd;
+@c_red: #eb4156;
+@c_green: #12b39d;
+@c_yellow: #f2be55;
+@c_orange: #fa8224;

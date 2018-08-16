@@ -5,4 +5,9 @@
   color: @c_font_sub;
   height: @s_line_title;
   line-height: @s_line_title;
+  .tips{
+    color: @c_red;
+    float: right;
+    font-size: @s_font_small;
+  }
 }

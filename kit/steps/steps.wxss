@@ -1,0 +1,79 @@
+@import "../../_common/common.wxss";
+.c-steps{
+  display: flex;
+  width: 750rpx-2*@s_space_section;
+  height: @s_line_list;
+  line-height: @s_line_list;
+  padding: @s_space_section;
+  background: @c_foreground;
+  font-size: @s_font_sub;
+  .c-step{
+    flex: 1;
+    display: flex;
+    height: @s_line_list;
+    line-height: @s_line_list;
+    .split{
+      flex: 1;
+      position: relative;
+      height: 50%;
+      border-bottom: 1rpx solid @c_border;
+    }
+    .title-wrap{
+      flex: 0 0 auto;
+      padding: 0 @s_space_small;
+      text-align: center;
+      .dot{
+        display: none;
+        height: 8rpx;
+        width: 8rpx;
+        background: @c_orange;
+        border-radius: 50%;
+        float: left;
+        margin-top: @s_line_list/2 - 4rpx;
+        margin-right: @s_space_small;
+      }
+      .title{
+        display: inline;
+      }
+    }
+    &:first-child{
+      .split-left{
+        visibility: hidden;
+      }
+    }
+    &:last-child{
+      .split-right{
+        visibility: hidden;
+      }
+    }
+    &.finish{
+      .split{
+        border-color: @c_orange;
+      }
+      .title{
+        color: @c_font_main;
+      }
+    }
+    &.process{
+      .split-left{
+        border-color: @c_orange;
+      }
+      .title-wrap{
+        .dot{
+          display: block;
+        }
+        .title{
+          color: @c_orange;
+          font-weight: bold;
+        }
+      }
+    }
+    &.wait{
+      .title-wrap{
+        .title{
+          color: @c_font_light;
+        }
+      }
+    }
+  }
+}

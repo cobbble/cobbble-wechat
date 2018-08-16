@@ -10,6 +10,7 @@
 // 间距
 @s_space_section: 30rpx; // 主视觉间距（模块间、左右padding）
 @s_space_normal: 20rpx;  // 普通padding
+@s_space_sub: 12rpx;     // 小间距
 @s_space_small: 8rpx;    // 最小间距
 
 // 文本行高
@@ -31,3 +32,7 @@
 // 列表元素
 @s_list_content: 475rpx;
 @s_list_content_with_icon: @s_list_content - @s_space_normal - @s_space_section;
+
+// z-index
+@z-index-base: 100;
+@z-index-popup: 200;

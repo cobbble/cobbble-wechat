@@ -34,6 +34,9 @@ Component({
     },
     height: {
       type: Number
+    },
+    text: {
+      type: String
     }
   },
   data: {
@@ -56,6 +59,12 @@ Component({
         height: iconBase64[this.data.type].height
       })
       return
+    }
+    if (this.data.type == 'text'
+      || this.data.type == 'text_invert'){
+      this.setData({
+        size: this.data.size < 40 ? 40 : this.data.size
+      })
     }
   }
 })
