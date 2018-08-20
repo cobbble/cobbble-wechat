@@ -7,7 +7,8 @@
     wx:for="{{steps}}"
     wx:for-index="index"
     wx:for-item="step"
-    wx:key="key">
+    wx:key="key"
+    wx:if="{{step}}">
     <view class="split split-left"></view>
     <view class="title-wrap">
       <view class="dot"></view>

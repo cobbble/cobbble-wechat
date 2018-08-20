@@ -27,7 +27,7 @@
           font-size: @s_font_main;
         }
         .search-placeholder{
-          color: @color_placeholder;
+          color: @c_font_light;
         }
         .my-icon{
           position: absolute;

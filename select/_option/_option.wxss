@@ -4,7 +4,7 @@
   height: @s_line_list;
   line-height: @s_line_list;
   font-size: @s_font_sub;
-  border-bottom: 1px solid @color_border;
+  border-bottom: 1px solid @c_border;
   padding: 0 20rpx;
   overflow: hidden;
   text-overflow: ellipsis;

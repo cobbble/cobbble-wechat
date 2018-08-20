@@ -6,6 +6,9 @@ Component({
     value: {
       type: String
     },
+    unit: {
+      type: String
+    },
     type: {
       type: String,
       value: 'text',

@@ -5,14 +5,14 @@
   line-height: 94rpx;
   width: 100%;
   background: #fafafa;
-  border-bottom: 1px solid @color_border;
+  border-bottom: 1px solid @c_border;
   position: fixed;
   top: 0;
   z-index: 100;
   .nav{
     flex: 1;
     text-align: center;
-    color: @color_grey;
+    color: @c_font_sub;
     font-size: 28rpx;
     position: relative;
   }
@@ -20,12 +20,12 @@
   &.status-1 .s-1,
   &.status-2 .s-2,
   &.status-3 .s-3{
-    color: @blue;
+    color: @c_blue;
     font-weight: 500;
     span{
       display: block;
       height: 6rpx;
-      background: @blue;
+      background: @c_blue;
       position: absolute;
       bottom: 0;
       left: 10%;

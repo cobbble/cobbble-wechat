@@ -2,9 +2,8 @@
   "component": true,
   "usingComponents": {
     "list-picker": "../kit/list/picker",
+    "list-item-wrap": "../kit/list/item-wrap",
     "popup": "../kit/popup/full",
-    "c-icon": "../kit/icon/icon",
-    "title": "../kit/title/title",
-    "button": "../button/button"
+    "c-icon": "../kit/icon/icon"
   }
 }

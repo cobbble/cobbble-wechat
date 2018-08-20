@@ -1,21 +1,24 @@
 <list-item-wrap
-  class="c-input {{title ? 'with-title' : 'no-title'}}">
+  class="c-input {{title ? 'with-title' : 'no-title'}} {{unit ? 'with-unit' : 'no-unit'}}">
   <view class="title" wx:if="{{title}}">{{title}}</view>
-  <input
-    value="{{value}}"
-    type="{{type}}"
-    password="{{password}}"
-    placeholder="{{placeholder}}"
-    placeholder-class="c-placeholder"
-    disabled="{{disabled}}"
-    maxlength="{{maxlength}}"
-    focus="{{focus}}"
-    confirm-type="{{confirmType}}"
-    bindinput="change"/>
-  <c-icon
-    type="clear"
-    size="30"
-    class="icon-clean"
-    catchtap="clean"
-    wx:if="{{value}}"></c-icon>
+  <view class="unit" wx:if="{{unit}}">{{unit}}</view>
+  <view class="input-wrap">
+    <input
+      value="{{value}}"
+      type="{{type}}"
+      password="{{password}}"
+      placeholder="{{placeholder}}"
+      placeholder-class="c-placeholder"
+      disabled="{{disabled}}"
+      maxlength="{{maxlength}}"
+      focus="{{focus}}"
+      confirm-type="{{confirmType}}"
+      bindinput="change"/>
+    <c-icon
+      type="clear"
+      size="30"
+      class="icon-clean"
+      catchtap="clean"
+      wx:if="{{value}}"></c-icon>
+  </view>
 </list-item-wrap>

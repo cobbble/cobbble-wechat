@@ -1,9 +1,25 @@
-<view class="c-form-item upload-wrap" catchtap='bindPreBack'>
-  <label>{{label}}</label>
-  <view class="upload-func" wx:if="{{isEmpty}}" bindtap="bindUpload">
-    <view class="placeholder">{{placeholder}}</view>
-    <image src='/static/image/icon/list-entry.png' class="entry"></image>
-  </view>
-  <image src='{{filePath}}' class="thumbnail" wx:if="{{isEmpty==false}}"></image>
-  <image src='/static/image/icon/close.png' class="clean" bindtap="bindClean" wx:if="{{isEmpty==false}}"></image>
-</view>
+<list-item-wrap class="c-uploader {{title ? 'with-title': 'no-title'}}" catchtap="selectPhoto">
+  <view class="title" wx:if="{{title}}">{{title}}</view>
+  <image
+    class="selected-image"
+    mode="aspectFill"
+    wx:if="{{value}}"
+    src="{{value}}"/>
+  <view class="placeholder" wx:if="{{value == ''}}">{{placeholder}}</view>
+  <c-icon
+    type="clear"
+    size="30"
+    class="icon-clean"
+    catchtap="clean"
+    wx:if="{{value}}"></c-icon>
+  <c-icon
+    type="entry"
+    class="icon-entry"
+    wx:if="{{!value}}"></c-icon>
+  <popup show="{{previewImage}}">
+    <image
+      class="preview-image"
+      mode="aspectFill"
+      src="{{value}}"/>
+  </popup>
+</list-item-wrap>

@@ -13,11 +13,11 @@
         flex: 1;
         flex-grow: 1;
         min-width: 0;
-        border-top: 1px solid @color_border;
+        border-top: 1px solid @c_border;
         height: 100%;
         transition: flex-grow 0.5s;
         .scroll-view-wrap{
-          border-left: 1px solid @color_border;
+          border-left: 1px solid @c_border;
           position: absolute;
           top: 0;
           bottom: 0;
@@ -43,7 +43,7 @@
             height: @s_line_list;
             text-align: center;
             line-height: @s_line_list;
-            border-bottom: 1px solid @color_border;
+            border-bottom: 1px solid @c_border;
           }
           .scroll-view-wrap{
             top: @s_line_list;

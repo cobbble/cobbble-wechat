@@ -1,7 +1,8 @@
 // 以下尺寸大多来自《微信小程序设计指南》，不建议自定义
 // 字体大小
-@s_font_large: 80rpx;  // 阿拉伯数字（大）
-@s_font_button: 36rpx; // 按钮
+@s_font_huge: 80rpx;   // 阿拉伯数字（大）
+@s_font_large: 40rpx;  // 大标题
+@s_font_button: 36rpx; // 大按钮
 @s_font_main: 34rpx;   // 正文
 @s_font_sub: 28rpx;    // 次要
 @s_font_small: 26rpx;  // 弱化
