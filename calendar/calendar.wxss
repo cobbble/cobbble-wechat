@@ -33,4 +33,9 @@
       margin-right: @s_space_normal + @s_space_section;
     }
   }
+  &.disabled{
+    .content{
+      margin-right: 0;
+    }
+  }
 }

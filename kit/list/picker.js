@@ -1,9 +1,5 @@
 Component({
   properties: {
-    placeholder: {
-      type: String,
-      value: '',
-    },
     title: {
       type: String,
       value: '',
@@ -11,6 +7,14 @@ Component({
     value: {
       type: String,
       value: '',
+    },
+    placeholder: {
+      type: String,
+      value: '',
+    },
+    disabled: {
+      type: Boolean,
+      value: false,
     },
   },
   methods: {

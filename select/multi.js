@@ -17,6 +17,10 @@ Component({
       type: String,
       value: '请选择'
     },
+    disabled: {
+      type: Boolean,
+      value: false,
+    },
     columns: {
       type: Array,
       observer: function(newVal, oldVal, changedPath) {
@@ -89,6 +93,8 @@ Component({
       })
     },
     showPanel: function(e) {
+      if(this.data.disabled)
+        return
       this.setData({isShow: true})
     },
     _submit: function(e) {

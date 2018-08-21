@@ -6,7 +6,7 @@
     size="30"
     class="icon-clean"
     catchtap="handleCleanAction"
-    wx:if="{{value}}"></c-icon>
+    wx:if="{{value && !disabled}}"></c-icon>
   <modal
     show="{{isShow}}"
     class="{{searchEnable ? 'with-search': 'no-search'}}">

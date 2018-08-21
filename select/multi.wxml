@@ -4,6 +4,7 @@
   placeholder="{{placeholder}}"
   value="{{valueText}}"
   catchtap="showPanel"
+  disabled="{{disabled}}"
   bind:clean="handleCleanAction">
   <modal show="{{isShow}}">
     <title>{{placeholder}}</title>

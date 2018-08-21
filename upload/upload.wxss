@@ -31,4 +31,9 @@
       margin-right: @s_space_normal + @s_space_section;
     }
   }
+  &.disabled{
+    .selected-image{
+      margin-right: 0;
+    }
+  }
 }

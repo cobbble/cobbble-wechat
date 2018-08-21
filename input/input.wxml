@@ -19,6 +19,6 @@
       size="30"
       class="icon-clean"
       catchtap="clean"
-      wx:if="{{value}}"></c-icon>
+      wx:if="{{value && !disabled}}"></c-icon>
   </view>
 </list-item-wrap>

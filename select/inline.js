@@ -20,6 +20,10 @@ Component({
         this._render()
       }
     },
+    disabled: {
+      type: Boolean,
+      value: false,
+    },
     value: {
       type: String,
       value: '',
@@ -45,6 +49,8 @@ Component({
   },
   methods: {
     showPanel: function(e) {
+      if(this.data.disabled)
+        return
       this.setData({isShow: true})
     },
     _render: function(){

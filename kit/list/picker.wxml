@@ -1,4 +1,4 @@
-<list-item-wrap class="c-list-picker {{title ? 'with-title': 'no-title'}}">
+<list-item-wrap class="c-list-picker {{title ? 'with-title': 'no-title'}} {{disabled? 'disabled': ''}}">
   <view class="title" wx:if="{{title}}">{{title}}</view>
   <view class="placeholder" wx:if="{{value == ''}}">{{placeholder}}</view>
   <view class="content" wx:if="{{value}}">{{value}}</view>
@@ -7,7 +7,7 @@
     size="30"
     class="icon-clean"
     catchtap="clean"
-    wx:if="{{value}}"></c-icon>
+    wx:if="{{value && !disabled}}"></c-icon>
   <c-icon
     type="entry"
     class="icon-entry"

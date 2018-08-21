@@ -36,4 +36,9 @@
       max-width: @s_list_content_with_icon;
     }
   }
+  &.disabled{
+    .content{
+      margin-right: 0;
+    }
+  }
 }

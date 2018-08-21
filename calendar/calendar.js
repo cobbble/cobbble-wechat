@@ -7,6 +7,10 @@ Component({
       type: String,
       value: '请选择日期'
     },
+    disabled: {
+      type: Boolean,
+      value: false,
+    },
     start: {
       type: String
     },

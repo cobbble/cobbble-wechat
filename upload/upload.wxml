@@ -1,4 +1,4 @@
-<list-item-wrap class="c-uploader {{title ? 'with-title': 'no-title'}}" catchtap="selectPhoto">
+<list-item-wrap class="c-uploader {{title ? 'with-title': 'no-title'}} {{disabled? 'disabled': ''}}" catchtap="selectPhoto">
   <view class="title" wx:if="{{title}}">{{title}}</view>
   <image
     class="selected-image"
@@ -11,7 +11,7 @@
     size="30"
     class="icon-clean"
     catchtap="clean"
-    wx:if="{{value}}"></c-icon>
+    wx:if="{{value && !disabled}}"></c-icon>
   <c-icon
     type="entry"
     class="icon-entry"
