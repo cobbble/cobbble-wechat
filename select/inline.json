@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "list-picker": "../kit/list/picker",
+    "modal": "../kit/modal/fullscreen",
+    "c-icon": "../kit/icon/icon",
+    "title": "../kit/title/title",
+    "option": "./_option/_option",
+    "button": "../button/button"
+  }
+}

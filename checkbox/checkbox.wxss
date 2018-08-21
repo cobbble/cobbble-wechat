@@ -1,6 +1,6 @@
 @import "../_common/common.wxss";
 .c-checkbox{
-  popup{
+  modal{
     .scroll-wrap{
       position: absolute;
       top: @s_line_title + @s_space_section + @s_space_small;

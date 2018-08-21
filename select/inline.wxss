@@ -3,7 +3,24 @@
 @search_height: 110rpx;
 // 搜索框padding
 @search_padding: 20rpx;
-.c-select{
+.c-select-inline{
+  display: inline-block;
+  position: relative;
+  .placeholder{
+    color: @c_font_light;
+  }
+  .content{
+    padding-right: 50rpx;
+  }
+  c-icon{
+    position: absolute;
+    top: 0;
+    &.icon-clean{
+      right: 0;
+      height: 30rpx;
+      padding: (@s_line_list - 30rpx)/2 8rpx;
+    }
+  }
   modal{
     .search-wrap{
       height: @search_height;

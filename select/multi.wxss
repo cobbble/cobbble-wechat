@@ -1,6 +1,6 @@
 @import "../_common/common.wxss";
 .c-selector-multi{
-  popup{
+  modal{
     .scroll-wrap{
       position: absolute;
       display: flex;
