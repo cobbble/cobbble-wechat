@@ -5,7 +5,7 @@
   value="{{valueText}}"
   catchtap="showPanel"
   bind:clean="handleCleanAction">
-  <popup show="{{isShow}}">
+  <modal show="{{isShow}}">
     <title>{{placeholder}}</title>
     <view class="scroll-wrap">
       <view
@@ -38,5 +38,5 @@
       </view>
     </view>
     <button sizeType="full" bind:SubmitAction="handleCancelAction">取消</button>
-  </popup>
+  </modal>
 </list-picker>

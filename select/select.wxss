@@ -8,7 +8,7 @@
     .search-wrap{
       height: @search_height;
       background: @c_background;
-      z-index: @z-index-popup + 1;
+      z-index: @z-index-modal + 1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -23,7 +23,7 @@
           padding-left: 50rpx;
           padding-right: 50rpx;
           height: @search_height - 2*@search_padding - 2rpx;
-          z-index: @z-index-popup + 1;
+          z-index: @z-index-modal + 1;
           font-size: @s_font_main;
         }
         .search-placeholder{
@@ -31,7 +31,7 @@
         }
         .my-icon{
           position: absolute;
-          z-index: @z-index-popup + 2;
+          z-index: @z-index-modal + 2;
           &.search{
             top: (@search_height - 2*@search_padding - 26rpx)/2;
             left: (50rpx - 13rpx)/2;

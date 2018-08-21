@@ -1,11 +1,11 @@
 @import "../../_common/common.wxss";
-.c-popup-full{
+.c-modal-fullscreen{
   height: 100%;
   width: 750rpx;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
-  z-index: @z-index-popup;
+  z-index: @z-index-modal;
   background: @c_background;
 }

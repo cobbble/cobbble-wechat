@@ -16,10 +16,10 @@
     type="entry"
     class="icon-entry"
     wx:if="{{!value}}"></c-icon>
-  <popup show="{{previewImage}}">
+  <modal show="{{previewImage}}">
     <image
       class="preview-image"
       mode="aspectFill"
       src="{{value}}"/>
-  </popup>
+  </modal>
 </list-item-wrap>

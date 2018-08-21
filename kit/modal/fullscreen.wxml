@@ -1,0 +1,3 @@
+<view class="c-modal-fullscreen" wx:if="{{show}}">
+  <slot></slot>
+</view>

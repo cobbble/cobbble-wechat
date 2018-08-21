@@ -36,4 +36,4 @@
 
 // z-index
 @z-index-base: 100;
-@z-index-popup: 200;
+@z-index-modal: 200;

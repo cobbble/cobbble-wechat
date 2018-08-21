@@ -3,7 +3,7 @@
   "usingComponents": {
     "list-picker": "../kit/list/picker",
     "list-item-wrap": "../kit/list/item-wrap",
-    "popup": "../kit/popup/full",
+    "modal": "../kit/modal/fullscreen",
     "c-icon": "../kit/icon/icon"
   }
 }

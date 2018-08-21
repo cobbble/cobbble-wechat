@@ -5,7 +5,7 @@
   value="{{valueText}}"
   catchtap="showPanel"
   bind:clean="handleCleanAction">
-  <popup
+  <modal
     show="{{isShow}}"
     class="{{searchEnable ? 'with-search': 'no-search'}}">
     <title wx:if="{{!searchEnable}}">{{placeholder}}</title>
@@ -38,5 +38,5 @@
       </scroll-view>
     </view>
     <button sizeType="full" bind:SubmitAction="handleCancelAction">取消</button>
-  </popup>
+  </modal>
 </list-picker>

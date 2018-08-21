@@ -1,3 +1,0 @@
-<view class="c-popup-full" wx:if="{{show}}">
-  <slot></slot>
-</view>
