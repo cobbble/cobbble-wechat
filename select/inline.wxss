@@ -14,11 +14,12 @@
   }
   c-icon{
     position: absolute;
-    top: 0;
+    top: 50%;
+    margin-top: -23rpx;
     &.icon-clean{
       right: 0;
       height: 30rpx;
-      padding: (@s_line_list - 30rpx)/2 8rpx;
+      padding: 8rpx;
     }
   }
   modal{

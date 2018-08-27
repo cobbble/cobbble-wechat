@@ -13,7 +13,7 @@ Component({
       type: String,
       value: 'text',
     },
-    passport: {
+    password: {
       type: Boolean,
       value: false
     },
