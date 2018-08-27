@@ -3,7 +3,6 @@
   font-size: @s_font_main;
   display: flex;
   .title{
-    background: #f1f1f1;
     color: @c_font_main;
     min-width: @s_list_title;
     margin-right: @s_space_section;

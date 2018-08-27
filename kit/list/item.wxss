@@ -1,20 +1,37 @@
 @import "../../_common/common.wxss";
-.c-list-item{
+.list-item-wrap{
   font-size: @s_font_main;
+  display: flex;
   .title{
-    display: inline-block;
     color: @c_font_main;
+    min-width: @s_list_title;
+    margin-right: @s_space_section;
   }
   .content{
     color: @c_font_main;
+    flex: 1;
+    &.blue{
+      color: @c_blue;
+    }
+    &.red{
+      color: @c_red;
+    }
+    &.green{
+      color: @c_green;
+    }
+    &.yellow{
+      color: @c_yellow;
+    }
+    &.orange{
+      color: @c_orange;
+    }
     &.grey{
       color: @c_font_light;
     }
   }
   &.with-title{
     .content{
-      float: right;
-      max-width: @s_list_content;
+      text-align: right;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
