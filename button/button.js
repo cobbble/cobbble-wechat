@@ -4,7 +4,7 @@ Component({
   properties: {
     sizeType: {
       type: String,
-      value: 'normal',
+      value: 'default',
     },
     disabled: {
       type: Boolean,

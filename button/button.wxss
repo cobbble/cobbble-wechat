@@ -1,24 +1,39 @@
 @import "../_common/common.wxss";
-.c-button-full, .c-button-normal{
+.c-button{
   background: @c_blue;
-  color: #fff;
+  color: @c_foreground;
   font-size: @s_font_button;
-}
-.c-button-normal{
-  height: @s_button;
-  line-height: @s_button;
-  width: 750rpx - @s_space_section * 2;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80rpx;
-  margin-bottom: 80rpx;
-}
-.c-button-full{
-  height: @s_button_full;
-  line-height: @s_button_full;
-  width: 100%;
-  border-radius: 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  &.default{
+    height: @s_button;
+    line-height: @s_button;
+    width: 750rpx - @s_space_section * 2;
+    border-radius: @s_button_radius;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80rpx;
+    margin-bottom: 80rpx;
+  }
+  &.full{
+    height: @s_button_full;
+    line-height: @s_button_full;
+    width: 100%;
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  &.medium{
+    display: inline-block;
+    font-size: @s_font_sub;
+    height: @s_button_medium;
+    line-height: @s_button_medium;
+    border-radius: @s_button_medium_radius;
+  }
+  &.small{
+    display: inline-block;
+    font-size: @s_font_sub;
+    height: @s_button_small;
+    line-height: @s_button_small;
+    border-radius: @s_button_small_radius;
+  }
 }

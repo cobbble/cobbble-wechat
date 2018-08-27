@@ -8,6 +8,7 @@
   background: @c_foreground;
   border-bottom: 1rpx solid @c_border;
   font-size: @s_font_main;
+  overflow: hidden;
   .placeholder{
     color: @c_font_light;
   }

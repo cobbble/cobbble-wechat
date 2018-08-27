@@ -2,6 +2,7 @@
   "component": true,
   "usingComponents": {
     "c-icon": "../kit/icon/icon",
-    "list-item-wrap": "../kit/list/item-wrap"
+    "list-item-wrap": "../kit/list/item-wrap",
+    "c-button": "../button/button"
   }
 }

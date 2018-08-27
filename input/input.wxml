@@ -1,24 +1,30 @@
-<list-item-wrap
-  class="c-input {{title ? 'with-title' : 'no-title'}} {{unit ? 'with-unit' : 'no-unit'}}">
-  <view class="title" wx:if="{{title}}">{{title}}</view>
-  <view class="unit" wx:if="{{unit}}">{{unit}}</view>
-  <view class="input-wrap">
-    <input
-      value="{{value}}"
-      type="{{type}}"
-      password="{{password}}"
-      placeholder="{{placeholder}}"
-      placeholder-class="c-placeholder"
-      disabled="{{disabled}}"
-      maxlength="{{maxlength}}"
-      focus="{{focus}}"
-      confirm-type="{{confirmType}}"
-      bindinput="change"/>
-    <c-icon
-      type="clear"
-      size="30"
-      class="icon-clean"
-      catchtap="clean"
-      wx:if="{{value && !disabled}}"></c-icon>
+<list-item-wrap>
+  <view class="c-input-wrap {{title ? 'with-title' : 'no-title'}} {{unit ? 'with-unit' : 'no-unit'}} {{button ? 'with-button' : 'no-button'}}">
+    <view class="title" wx:if="{{title}}">{{title}}</view>
+    <view class="input-wrap">
+      <input
+        value="{{value}}"
+        type="{{type}}"
+        password="{{password}}"
+        placeholder="{{placeholder}}"
+        placeholder-class="c-placeholder"
+        disabled="{{disabled}}"
+        maxlength="{{maxlength}}"
+        focus="{{focus}}"
+        confirm-type="{{confirmType}}"
+        bindinput="change"/>
+      <c-icon
+        type="clear"
+        class="clean"
+        size="30"
+        catchtap="clean"
+        wx:if="{{value && !disabled && !title}}"></c-icon>
+    </view>
+    <view class="unit" wx:if="{{unit}}">{{unit}}</view>
+    <c-button
+      size-type="small"
+      bind:SubmitAction="buttonTap"
+      wx:if="{{button}}">{{button}}
+    </c-button>
   </view>
 </list-item-wrap>

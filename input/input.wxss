@@ -1,60 +1,49 @@
 @import "../_common/common.wxss";
-.c-input{
+.c-input-wrap{
   font-size: @s_font_main;
+  display: flex;
   .title{
-    display: inline-block;
+    background: #f1f1f1;
     color: @c_font_main;
+    min-width: @s_list_title;
+    margin-right: @s_space_section;
   }
   .input-wrap{
+    flex: 1;
     position: relative;
     input{
       height: @s_line_list;
       line-height: @s_line_list;
-      margin-right: @s_space_normal + @s_space_section;
     }
     .c-placeholder{
       color: @c_font_light;
     }
-    c-icon{
+    c-icon.clean{
       position: absolute;
       top: 0;
       right: 0;
-      /* right: @s_space_normal; */
       height: 30rpx;
       padding: (@s_line_list - 30rpx)/2 8rpx;
     }
   }
-  .unit{
-    position: absolute;
-    top: 0;
-    right: @s_space_section;
-    width: 80rpx;
-    text-align: right;
+  &.no-title{
+    input{
+      margin-right: @s_space_normal + @s_space_section!important;
+    }
   }
   &.with-title{
-    .title{
-      float: left;
-    }
-    .input-wrap{
-      float: right;
-      input{
-        width: @s_list_content;
-        text-align: right;
-        margin-right: 0;
-      }
-      c-icon{
-        display: none;
-      }
+    input{
+      text-align: right;
     }
   }
-  &.with-unit{
+  &.with-unit, &.with-button{
     .input-wrap{
-      margin-right: 80rpx;
-      input{
-        width: auto;
-        padding-right: @s_space_small;
-      }
+      margin-right: @s_space_sub;
     }
   }
-
+  &.with-button{
+    c-button{
+      margin-top: (@s_line_list - @s_button_small)/2
+    }
+  }
 }
