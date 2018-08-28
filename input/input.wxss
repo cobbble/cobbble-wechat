@@ -37,7 +37,7 @@
   }
   &.with-unit, &.with-button{
     .input-wrap{
-      margin-right: @s_space_sub;
+      margin-right: @s_space_normal;
     }
   }
   &.with-button{
