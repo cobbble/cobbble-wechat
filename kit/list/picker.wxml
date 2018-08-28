@@ -1,16 +1,18 @@
-<list-item-wrap class="c-list-picker {{title ? 'with-title': 'no-title'}} {{disabled? 'disabled': ''}}">
-  <view class="title" wx:if="{{title}}">{{title}}</view>
-  <view class="placeholder" wx:if="{{value == ''}}">{{placeholder}}</view>
-  <view class="content" wx:if="{{value}}">{{value}}</view>
-  <c-icon
-    type="clear"
-    size="30"
-    class="icon-clean"
-    catchtap="clean"
-    wx:if="{{value && !disabled}}"></c-icon>
-  <c-icon
-    type="entry"
-    class="icon-entry"
-    wx:if="{{!value}}"></c-icon>
-  <slot></slot>
+<list-item-wrap>
+  <view class="picker-wrap {{title ? 'with-title': 'no-title'}} {{disabled? 'disabled': ''}}">
+    <view class="title" wx:if="{{title}}">{{title}}</view>
+    <view class="placeholder" wx:if="{{value == ''}}">{{placeholder}}</view>
+    <view class="content" wx:if="{{value}}">{{value}}</view>
+    <c-icon
+      type="clear"
+      size="30"
+      class="icon-clean"
+      catchtap="clean"
+      wx:if="{{value && !disabled}}"></c-icon>
+    <c-icon
+      type="entry"
+      class="icon-entry"
+      wx:if="{{!value}}"></c-icon>
+    <slot></slot>
+  </view>
 </list-item-wrap>

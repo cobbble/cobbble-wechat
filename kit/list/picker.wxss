@@ -1,11 +1,21 @@
 @import "../../_common/common.wxss";
-.c-list-picker{
+.picker-wrap{
+  font-size: @s_font_main;
+  display: flex;
+  .title{
+    color: @c_font_main;
+    min-width: @s_list_title;
+    margin-right: @s_space_section;
+  }
+  .placeholder, .content{
+    flex: 1;
+    margin-right: @s_space_normal + @s_space_section;
+  }
   .placeholder{
     color: @c_font_light;
   }
   .content{
     color: @c_font_main;
-    max-width: 600rpx;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -25,15 +35,8 @@
     }
   }
   &.with-title{
-    .title{
-      float: left;
-    }
     .placeholder, .content{
-      float: right;
-      margin-right: @s_space_normal + @s_space_section;
-    }
-    .content{
-      max-width: @s_list_content_with_icon;
+      text-align: right;
     }
   }
   &.disabled{
