@@ -23,6 +23,8 @@
     <view class="unit" wx:if="{{unit}}">{{unit}}</view>
     <c-button
       size-type="small"
+      width="180rpx"
+      disabled="{{buttonDisabled}}"
       bind:SubmitAction="buttonTap"
       wx:if="{{button}}">{{button}}
     </c-button>

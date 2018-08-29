@@ -42,7 +42,7 @@
   }
   &.with-button{
     c-button{
-      margin-top: (@s_line_list - @s_button_small)/2
+      margin-top: (@s_line_list - @s_button_small)/2;
     }
   }
 }

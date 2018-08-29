@@ -1,3 +1,8 @@
-<button class="c-button {{sizeType}}" disabled="{{disabled}}" hover-class="{{hoverClass}}" catchtap="bindSubmit">
+<button
+  class="c-button {{sizeType}}"
+  disabled="{{disabled}}"
+  hover-class="{{hoverClass}}"
+  style="width:{{width}}"
+  catchtap="bindSubmit">
   <slot></slot>
 </button>

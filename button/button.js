@@ -18,6 +18,9 @@ Component({
       type: String,
       value: 'normal',
     },
+    width: {
+      type: String
+    }
   },
   data: {
   },
