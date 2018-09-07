@@ -9,6 +9,9 @@ Component({
     name: {
       type: String,
     },
+    extra: {
+      type: String,
+    },
     selected: {
       type: Boolean,
       value: false

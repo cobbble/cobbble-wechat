@@ -1,20 +1,20 @@
 Component({
   properties: {
     icon: {
-      type: String,
-      value: ''
+      type: String
+    },
+    iconSize: {
+      type: Number,
+      value: 40
     },
     url: {
-      type: String,
-      value: ''
+      type: String
     },
     title: {
-      type: String,
-      value: ''
+      type: String
     },
     content: {
-      type: String,
-      value: ''
+      type: String
     },
   },
 })

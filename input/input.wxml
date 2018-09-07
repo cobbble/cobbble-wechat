@@ -25,7 +25,7 @@
       size-type="small"
       width="180rpx"
       disabled="{{buttonDisabled}}"
-      bind:SubmitAction="buttonTap"
+      bind:submit="buttonTap"
       wx:if="{{button}}">{{button}}
     </c-button>
   </view>

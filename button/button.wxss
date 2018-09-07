@@ -1,8 +1,28 @@
 @import "../_common/common.wxss";
+
+@keyframes loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
 .c-button{
-  background: @c_blue;
+  background: @c_main;
   color: @c_foreground;
   font-size: @s_font_button;
+  text-align: center;
+  &.disabled {
+    background-color: lighten(@c_main,20%);
+  }
+  &.loading {
+    background: linear-gradient(90deg, lighten(@c_main,20%) 25%, lighten(@c_main,30%) 37%, lighten(@c_main,20%) 63%);
+    animation: loading 1.4s ease infinite running;
+    background-size: 400% 100%;
+    color: @c_background;
+  }
   &.default{
     height: @s_button;
     line-height: @s_button;

@@ -13,6 +13,12 @@ Component({
     loading: {
       type: Boolean,
       value: false,
+      observer: function(newVal, oldVal, changedPath) {
+        this.setData({disabled: newVal})
+      }
+    },
+    loadingText: {
+      type: String
     },
     hoverClass: {
       type: String,
@@ -25,8 +31,10 @@ Component({
   data: {
   },
   methods: {
-    bindSubmit: function(e){
-      this.triggerEvent('SubmitAction', this, { bubbles: true , composed: false})
+    tap: function(e){
+      if(this.data.disabled)
+        return
+      this.triggerEvent('submit', this, { bubbles: true , composed: false})
     }
   }
 })

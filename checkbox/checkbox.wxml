@@ -23,6 +23,6 @@
         </option>
       </scroll-view>
     </view>
-    <button sizeType="full" bind:SubmitAction="handleSubmitAction">确认{{choosenText}}</button>
+    <button sizeType="full" bind:submit="handleSubmitAction">确认{{choosenText}}</button>
   </modal>
 </list-picker>

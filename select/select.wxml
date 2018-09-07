@@ -38,6 +38,6 @@
           bind:submit="handleSelectAction"></option>
       </scroll-view>
     </view>
-    <button sizeType="full" bind:SubmitAction="handleCancelAction">取消</button>
+    <button sizeType="full" bind:submit="handleCancelAction">取消</button>
   </modal>
 </list-picker>

@@ -1,8 +1,7 @@
-<button
-  class="c-button {{sizeType}}"
-  disabled="{{disabled}}"
-  hover-class="{{hoverClass}}"
+<view
+  class="c-button {{sizeType}} {{disabled? 'disabled': ''}} {{loading? 'loading': ''}}"
   style="width:{{width}}"
-  catchtap="bindSubmit">
-  <slot></slot>
-</button>
+  catch:tap="tap">
+  <view wx:if="{{loading && loadingText}}">{{loadingText}}</view>
+  <slot wx:if="{{!loading || loadingText==''}}"></slot>
+</view>
