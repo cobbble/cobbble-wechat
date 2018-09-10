@@ -20,3 +20,4 @@
 
 // 主色
 @c_main: @c_blue;
+@c_disabled: #ccc;
