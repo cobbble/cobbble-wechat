@@ -20,4 +20,4 @@
 
 // 主色
 @c_main: @c_blue;
-@c_disabled: #ccc;
+@c_disabled: lighten(@c_blue,20%);
