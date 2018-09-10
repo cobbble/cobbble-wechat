@@ -15,10 +15,10 @@
   font-size: @s_font_button;
   text-align: center;
   &.disabled {
-    background-color: lighten(@c_main,20%);
+    background-color: @c_disabled;
   }
   &.loading {
-    background: linear-gradient(90deg, lighten(@c_main,20%) 25%, lighten(@c_main,30%) 37%, lighten(@c_main,20%) 63%);
+    background: linear-gradient(90deg, @c_disabled 25%, lighten(@c_disabled,20%) 37%, @c_disabled 63%);
     animation: loading 1.4s ease infinite running;
     background-size: 400% 100%;
     color: @c_background;

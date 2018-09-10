@@ -18,4 +18,6 @@
 @c_yellow: #f2be55;
 @c_orange: #fa8224;
 
+// 主配色
 @c_main: @c_blue;
+@c_disabled: #aaa;

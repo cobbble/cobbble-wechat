@@ -1,4 +1,4 @@
-@import "./theme/blue-light.wxss";
+@import "./theme/blue-dark.wxss";
 @import "./size.wxss";
 
 .clearfix {
