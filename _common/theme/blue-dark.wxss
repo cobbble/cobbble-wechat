@@ -12,10 +12,10 @@
 @c_border: #e5e5e5;
 
 // 常用色
-@c_green: #12b39d;
+@c_blue: #222575;
 @c_red: #e64340;
+@c_green: #12b39d;
 @c_yellow: #f2be55;
 @c_orange: #fa8224;
-@c_blue: #222575;
 
 @c_main: @c_blue;
