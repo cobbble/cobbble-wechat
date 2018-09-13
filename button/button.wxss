@@ -24,16 +24,17 @@
     color: @c_background;
   }
   &.default{
+    display: block;
     height: @s_button;
     line-height: @s_button;
     width: 750rpx - @s_space_section * 2;
     border-radius: @s_button_radius;
+    margin-top: @s_space_section * 2;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80rpx;
-    margin-bottom: 80rpx;
   }
   &.full{
+    display: block;
     height: @s_button_full;
     line-height: @s_button_full;
     width: 100%;
