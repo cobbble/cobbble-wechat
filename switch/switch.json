@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "list-item-wrap": "../kit/list/item-wrap"
+  }
+}

@@ -1,0 +1,8 @@
+<list-item-wrap>
+  <view class="c-switch-wrap {{checked? 'checked': ' '}}">
+    <view class="title" wx:if="{{title}}">{{title}}</view>
+    <view class="switch-wrap" catchtap="handleSwitchAction">
+      <view class="switch-circle"></view>
+    </view>
+  </view>
+</list-item-wrap>

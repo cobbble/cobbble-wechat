@@ -1,0 +1,41 @@
+@import "../_common/common.wxss";
+@s_switch_height: 56rpx;
+@s_switch_width: 100rpx;
+.c-switch-wrap{
+  display:flex;
+  line-height: @s_line_list;
+  .title{
+    min-width:180rpx;
+    margin-right:30rpx;
+  }
+  .switch-wrap{
+    position: relative;
+    width: @s_switch_width;
+    height: @s_switch_height;
+    border-radius: @s_switch_height;
+    background: @c_font_light;
+    margin-left: auto;
+    margin-top: (@s_line_list - @s_switch_height)/2;
+    .switch-circle{
+      position: absolute;
+      box-sizing: border-box;
+      height: @s_switch_height;
+      width: @s_switch_height;
+      background: #fff;
+      border: 4rpx solid @c_font_light;
+      border-radius: @s_switch_height;
+      top: 0;
+      left: 0;
+    }
+  }
+  &.checked{
+    .switch-wrap{
+      background: @c_green;
+      .switch-circle{
+        border: 4rpx solid @c_green;
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+}

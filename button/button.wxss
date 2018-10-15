@@ -37,11 +37,12 @@
     display: block;
     height: @s_button_full;
     line-height: @s_button_full;
-    width: 100%;
+    width: 750rpx;
     border-radius: 0;
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: @z-index-base + 10;
   }
   &.medium{
     display: inline-block;
