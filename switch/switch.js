@@ -15,6 +15,8 @@ Component({
   },
   methods: {
     handleSwitchAction: function(e) {
+      if(this.data.disabled)
+        return
       var checked = !this.data.checked
       this.setData({
         checked: checked
